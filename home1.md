@@ -7,18 +7,20 @@ In questa demo ho scelto di utilizzare OSWAP Juice shop come target per sperimen
 * L'ordine delle flag non è l'ordine con cui ho effettivamente conquistato la flag;
 * Gli strumenti che ho utilizzato, sia per la scrittura del report che la costruzione della demo, sono riportati alla fine della pagina;
 * La demo presenta alcuni tagli improvvisi sui video originali. Questo è dovuto al fatto che la demo mostra esclusivamente la soluzione corretta, trovata alla fine di numerose prove senza successo ma comunque presenti nei video originali;
-
-
+  
+  
 ## Flag ottenute senza aiuti:
 
-### Login as admin  
-**Descrizione**: Log in with the administrator’s user account.  
-**Soluzione**: Questa flag l'ho ottenuta cercando di effettuare un bypass del login tramite una SQL injection. Non avendo ancora trovato nè uno username nè una password per effettuare un login legittimo, ho provato una SQL injection sul campo username della pagina e ho ottenuto l'accesso come admin.  
+### Login admin  
+#### Descrizione
+Log in with the administrator’s user account.  
+#### Soluzione
+Questa flag l'ho ottenuta cercando di effettuare un bypass del login tramite una SQL injection. Non avendo ancora trovato nè uno username nè una password per effettuare un login legittimo, ho provato una SQL injection sul campo username della pagina e ho ottenuto l'accesso come admin.  
   
-![LoginAdmin](immaginiCy/LoginAsAdminFlag.png ':class=banner-image')
+![LoginAdmin](immaginiCy/LoginAsAdminFlag.png)
 ---
 
- ### Error handling
+### Error handling
 **Descrizione**: Provoke an error that is neither very gracefully nor consistently handled.   
 **Soluzione**: Sbagliando nel immettere una corretta stringa per effettuare l'SQL injection, ho ottenuto questo flag accidentalmente.  
   
