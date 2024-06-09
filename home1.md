@@ -42,14 +42,14 @@ Questa flag l'ho ottenuta cercando di effettuare un bypass del login tramite una
 ---
 
  ### CAPTCHA bypass
-**Descrizione**: Submit 10 or more customer feedbacks within 10 seconds.  
+**Descrizione**: Submit 10 or more customer feedbacks within 20 seconds.  
 **Soluzione**: Provando ad analizzare le richieste http per fare un normale feedback, mi sono accorta che il CAPTCHA era identificato da un id nel json del payload. Ho supposto, allora, che il risultato del CAPTCHA fosse controllato mediante il suo id. Copiando questo id e il risultato corretto del CAPTCHA in un altro pacchetto, è stato possibile replicare lo stesso pacchetto, usando repeater di burp, e spedirlo più volte al server in pochi secondi.  
   
 ![Captcha](immaginiCy/CaptchaBypassFlag.png ':class=banner-image')
 ---
 
  ### Forged review
-<p>**Descrizione**: Post a product review as another user or edit any user’s existing review.  
+<p><b>Descrizione</b>: Post a product review as another user or edit any user’s existing review.<br>  
 **Soluzione**: Provando ad analizzare le richieste http per fare una normale review con un utente, mi sono accorta che lo username della review veniva trasportato tramite coppia nome-valore nel json del payload, facilmente modificabile attribuendogli un altro username. In questo modo, la review salvata nel sito conteneva il massaggio che avevo inserito ma l'autore corrispondeva allo username inserito nel json.</p>  
    
 ![forgedr](immaginiCy/ForgedReviewFlag.png ':class=banner-image')
