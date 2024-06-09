@@ -11,7 +11,7 @@ In questa demo ho scelto di utilizzare OSWAP Juice shop come target per sperimen
 
 ## Flag ottenute senza aiuti:
 
- ### Login as admin
+### Login as admin
 **Descrizione**: Log in with the administrator’s user account.  
 **Soluzione**: Questa flag l'ho ottenuta cercando di effettuare un bypass del login tramite una SQL injection. Non avendo ancora trovato nè uno username nè una password per effettuare un login legittimo, ho provato una SQL injection sul campo username della pagina e ho ottenuto l'accesso come admin.  
   
@@ -78,18 +78,18 @@ In questa demo ho scelto di utilizzare OSWAP Juice shop come target per sperimen
 ![LoginAsAdmingFlag](immaginiCy/LoginAsAdminFlag.png ':class=banner-image')
 ---
 
- ### Admin registration
+### Admin registration
 **Descrizione**: Register as a user with administrator privileges.  
 **Soluzione**: Dopo diversi tentativi, ho consultato l'[aiuto](https://pwning.owasp-juice.shop/companion-guide/latest/part2/improper-input-validation.html#_register_as_a_user_with_administrator_privileges) che suggeriva il "metodo più semplice". Provandoci ancora un paio di volte e studiando la struttura json dei token (utilizzando sempre [questo sito](https://jwt.io/)), ho notato un campo chiamato "role". Questo campo prende valore "admin" nell'account admin e "customer" negli altri account. Intercettando la richiesta di registrazione e inserendo questo campo nel json del payload assegnandogli valore "admin", ho ottenuto finalmente la flag.  
   
 ![AdminReg](immaginiCy/AdminRegistrationFlag.png ':class=banner-image')
 ---
 
- ### Admin section
+### Admin section
 **Descrizione**: Access the administration section of the store.  
 **Soluzione**: Sfruttando il primo [suggerimento](https://pwning.owasp-juice.shop/companion-guide/latest/part2/broken-access-control.html#_access_the_administration_section_of_the_store) molto banale, ho provato a indovinare il path corretto. Dopo un paio di tentativi l'ho indovinato e sono arrivata alla sezione di amministrazione, ottenendo la flag.  
   
-![AdminSel](immaginiCy/AdminSectionFlag.png ':class=banner-image')
+![AdminSel](immaginiCy/AdminSectionFlag.png)
 ---
 ---
 
