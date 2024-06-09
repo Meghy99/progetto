@@ -9,7 +9,7 @@ In questa demo ho scelto di utilizzare OSWAP Juice shop come target per sperimen
 * La demo presenta alcuni tagli improvvisi sui video originali. Questo è dovuto al fatto che la demo mostra esclusivamente la soluzione corretta, trovata alla fine di numerose prove senza successo ma comunque presenti nei video originali;
   
 <br>  
-
+  
 ## Flag ottenute senza aiuti  
 <br>
 
@@ -84,7 +84,7 @@ In questa demo ho scelto di utilizzare OSWAP Juice shop come target per sperimen
 
 ### Admin registration <br>
 <p><b>Descrizione</b>: Register as a user with administrator privileges.</p>   
-<p><b>Soluzione</b>: Dopo diversi tentativi, ho consultato l'<a href="https://pwning.owasp-juice.shop/companion-guide/latest/part2/improper-input-validation.html#_register_as_a_user_with_administrator_privileges">aiuto</a> che suggeriva il "metodo più semplice". Provandoci ancora un paio di volte e studiando la struttura json dei token (utilizzando sempre <a href="https://jwt.io/">questo sito</a>), ho notato un campo chiamato "role". Questo campo prende valore "admin" nell'account admin e "customer" negli altri account. Intercettando la richiesta di registrazione e inserendo questo campo nel json del payload assegnandogli valore "admin", ho ottenuto finalmente la flag.<br></p>    
+<p><b>Soluzione</b>: Dopo diversi tentativi, ho consultato l'<a href="https://pwning.owasp-juice.shop/companion-guide/latest/part2/improper-input-validation.html#_register_as_a_user_with_administrator_privileges">aiuto</a> che suggeriva il "metodo più semplice". Provandoci ancora un paio di volte e studiando la struttura json dei token, utilizzando sempre <a href="https://jwt.io/">questo sito</a>, ho notato un campo chiamato "role". Questo campo prende valore "admin" nell'account admin e "customer" negli altri account. Intercettando la richiesta di registrazione e inserendo questo campo nel json del payload assegnandogli valore "admin", ho ottenuto finalmente la flag.<br></p>    
   
 ![AdminReg](immaginiCy/AdminRegistrationFlag.png)
 <hr>
