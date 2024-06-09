@@ -47,8 +47,8 @@ In questa demo ho scelto di utilizzare OSWAP Juice shop come target per sperimen
 ---
 
  ### Forged review
-**Descrizione**: Post a product review as another user or edit any user’s existing review.  
-**Soluzione**: Provando ad analizzare le richieste http per fare una normale review con un utente, mi sono accorta che lo username della review veniva trasportato tramite coppia nome-valore nel json del payload, facilmente modificabile attribuendogli un altro username. In questo modo, la review salvata nel sito conteneva il massaggio che avevo inserito ma l'autore corrispondeva allo username inserito nel json. 
+<p>**Descrizione**: Post a product review as another user or edit any user’s existing review.  
+**Soluzione**: Provando ad analizzare le richieste http per fare una normale review con un utente, mi sono accorta che lo username della review veniva trasportato tramite coppia nome-valore nel json del payload, facilmente modificabile attribuendogli un altro username. In questo modo, la review salvata nel sito conteneva il massaggio che avevo inserito ma l'autore corrispondeva allo username inserito nel json.</p>  
    
 ![forgedr](immaginiCy/ForgedReviewFlag.png ':class=banner-image')
 ---
