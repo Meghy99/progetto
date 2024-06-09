@@ -11,7 +11,7 @@ In questa demo ho scelto di utilizzare OSWAP Juice shop come target per sperimen
 
 ## Flag ottenute senza aiuti:
 
-### Login as admin
+### Login as admin  
 **Descrizione**: Log in with the administrator’s user account.  
 **Soluzione**: Questa flag l'ho ottenuta cercando di effettuare un bypass del login tramite una SQL injection. Non avendo ancora trovato nè uno username nè una password per effettuare un login legittimo, ho provato una SQL injection sul campo username della pagina e ho ottenuto l'accesso come admin.  
   
