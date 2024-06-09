@@ -7,6 +7,7 @@ In questa demo ho scelto di utilizzare OSWAP Juice shop come target per sperimen
 * L'ordine delle flag non è l'ordine con cui ho effettivamente conquistato la flag;
 * Gli strumenti che ho utilizzato, sia per la scrittura del report che la costruzione della demo, sono riportati alla fine della pagina;
 * La demo presenta alcuni tagli improvvisi sui video originali. Questo è dovuto al fatto che la demo mostra esclusivamente la soluzione corretta, trovata alla fine di numerose prove senza successo ma comunque presenti nei video originali;
+* L'audio origiale della demo è stato tolto, sempre a causa di questi tagli.
   
 <br>  
   
