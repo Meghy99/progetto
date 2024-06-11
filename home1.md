@@ -1,4 +1,4 @@
-# Report di OSWAP Juice shop (di Zanella Malaga)
+# Report di OSWAP Juice shop
 
 ### Intoduzione
 In questa demo ho scelto di utilizzare OSWAP Juice shop come target per sperimentare Burp e altri tool. Inizialmente, ho provato a ottenere le flag autonomamente (basandomi sulla [lista delle vulnerabilità](https://pwning.owasp-juice.shop/companion-guide/latest/part2/README.html) o provando a mettere in pratica alcune nozioni del sito del corso) e, in caso di difficoltà, consultando il corrispondente aiuto della medesima pagina. Premetto che:
