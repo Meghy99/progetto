@@ -7,7 +7,7 @@ In questa demo ho scelto di utilizzare OSWAP Juice shop come target per sperimen
 * L'ordine delle flag non è l'ordine con cui ho effettivamente conquistato la flag;
 * Gli strumenti che ho utilizzato, sia per la scrittura del report che la costruzione della demo, sono riportati alla fine della pagina;
 * La demo presenta alcuni tagli improvvisi sui video originali. Questo è dovuto al fatto che la demo mostra esclusivamente la soluzione corretta, trovata alla fine di numerose prove senza successo ma comunque presenti nei video originali;
-* L'audio origiale della demo è stato tolto, sempre a causa di questi tagli.
+* L'audio originale della demo è stato tolto, sempre a causa di questi tagli.
   
 <br>  
   
@@ -23,7 +23,7 @@ In questa demo ho scelto di utilizzare OSWAP Juice shop come target per sperimen
 
 ### Error handling <br> 
 <p><b>Descrizione</b>: Provoke an error that is neither very gracefully nor consistently handled.</p>      
-<p><b>Soluzione</b>: Sbagliando nel immettere una corretta stringa per effettuare l'SQL injection, ho ottenuto questo flag accidentalmente.<br></p>    
+<p><b>Soluzione</b>: Sbagliando nell' immettere una corretta stringa per effettuare una SQL injection, ho ottenuto questo flag accidentalmente.<br></p>    
   
 ![ErrorHandlingFlag](immaginiCy/ErrorHandlingFlag.png)
 <hr>
@@ -74,13 +74,13 @@ In questa demo ho scelto di utilizzare OSWAP Juice shop come target per sperimen
 ![BullyChatbot](immaginiCy/BullyChatbotFlag.png)
 <hr>
 
- ### Password strenght <br>
+ ### Password strength <br>
 <p><b>Descrizione</b>: Log in with the administrator’s user credentials without previously changing them or applying SQL Injection.</p>     
 <p><b>Soluzione</b>: Avendo letto il sito del corso, sapevo che all'interno dell'authorization token era contenuto l'hash della password di quell'utente. Ho utilizzato questa informazione sul token dell'admin in quanto avevo appena conseguito la flag "login admin". Ho intercettato con burp la richiesta http generata cliccando sul carrello e ho copiato il token. Utilizzando <a href="https://jwt.io/">questo sito</a> per decifrare il token e <a href="https://crackstation.net/">questo sito</a> per l'offline guessing, sono riuscita a ricavare la password dell'admin in chiaro ed effettuare un login legittimo utilizzando le sue credenziali.</p>
 <blockquote>    
 <cite>Nella descrizione della flag viene specificato di non usare prima la SQL injection, ma ho ottenuto lo stesso questo flag. Non era mia intenzione ottenerlo, nè tantomeno stavo cercando di ottenerlo. Volevo semplicemente applicare le informazioni lette sul sito del corso.</cite></blockquote>  
   
-![LoginAsAdmingFlag](immaginiCy/LoginAsAdminFlag.png)
+![PasswordStrength](immaginiCy/PasswordStrengthFlag.png)
 <hr>
 
 ### Admin registration <br>
